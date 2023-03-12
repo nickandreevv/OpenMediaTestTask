@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap');
+
+.label {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  color: #1B191C;
+  margin-bottom: 20px;
+  font-family: Space Grotesk;
+}
+
+.input {
+  width: 100%;
+  height: 64px;
+  display: flex;
+
+  input {
+    padding: 32px 16px;
+    border: none;
+    width: 100%;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #1B191C;
+    outline: none;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: Space Grotesk;
+
+    &::placeholder {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.4px;
+      color: #A4A3A4;
+      font-family: Space Grotesk;
+    }
+  }
+
+  button {
+    width: 64px;
+    border: none;
+    background: #F8D231;
+  }
+
+  &.inputError {
+    box-sizing: border-box;
+
+    .inputWrapper {
+      &::after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url("../../../public/warning.svg") no-repeat;
+        position: absolute;
+        right: 16px;
+        top: 20px;
+
+        @media(min-width: 1024px) {
+          top: 36px;
+        }
+      }
+    }
+
+    input {
+      border: 0.5px solid #C6A827;
+      font-family: Space Grotesk;
+    }
+  }
+
+  @media(min-width: 1024px) {
+    height: 96px;
+
+    button {
+      width: 96px;
+    }
+  }
+}
+
+.error {
+  margin-top: 8px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.3px;
+  color: #C6A827;
+  font-family: Space Grotesk;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
