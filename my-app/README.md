@@ -1,3 +1,9 @@
+How to start in IDE terminal:
+
+1. git clone {ssh key}
+2. npm install (to install node_modules)
+3. npm start
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
