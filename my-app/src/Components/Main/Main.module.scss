@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap');
 
 .wrapper {
-  background: #EEEEEE;
+  background: #eeeeee;
   padding: 20px 12px;
   display: grid;
   align-items: start;
@@ -13,7 +13,6 @@
     padding: 40px;
     grid-template-columns: 30%;
   }
-
 }
 
 .title {
@@ -25,7 +24,7 @@
   font-size: 36px;
   line-height: 110%;
 
-  @media(min-width: 1024px) {
+  @media (min-width: 1024px) {
     font-size: 48px;
     line-height: 52px;
   }
@@ -36,13 +35,12 @@
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 12px;
-  color: #1B191C;
+  color: #1b191c;
   letter-spacing: -0.4px;
   font-family: Space Grotesk;
 
-  @media(min-width: 1024px) {
+  @media (min-width: 1024px) {
     margin-bottom: 182px;
-
   }
 }
 
@@ -50,7 +48,7 @@
   position: initial;
   margin-bottom: 40px;
 
-  @media(min-width: 1024px) {
+  @media (min-width: 1024px) {
     width: 40%;
     position: absolute;
     top: 30%;
@@ -63,7 +61,7 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: -0.3px;
-  color: #1B191C;
+  color: #1b191c;
   font-family: Space Grotesk;
 
   span {
@@ -71,4 +69,8 @@
     cursor: pointer;
     font-family: Space Grotesk;
   }
+}
+a {
+  text-decoration: none;
+  color: #1b191c;
 }
